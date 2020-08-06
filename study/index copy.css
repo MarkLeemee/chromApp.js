@@ -30,6 +30,7 @@ body {
     }
 }
 
+/*배경화면으로 적용되게 z-index는 -1*/
 .bgImage {
     position: absolute;
     top: 0;
