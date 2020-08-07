@@ -23,9 +23,11 @@ function saveToDos() {
 
 function paintToDo(text) {
     const li = document.createElement("li");
+    li.className = "toDo";
     const delBtn = document.createElement("button");
     const span = document.createElement("span");
     delBtn.innerText = "X";
+    delBtn.className = "toDos_btn";
     delBtn.addEventListener("click", deleteToDo);
     span.innerText = text;
     li.appendChild(span);
@@ -59,6 +61,7 @@ function loadToDos() {
 }
 
 function init() {
+    toDoInput.className="showing";
     loadToDos();
     toDoForm.addEventListener("submit", handleSubmit);
 }
